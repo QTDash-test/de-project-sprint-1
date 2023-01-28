@@ -1,4 +1,4 @@
-insert into
+insert into analysis.dm_rfm_segments (user_id, recency, frequency, monetary_value)
 select
 	rec.user_id as user_id,
 	coalesce(rec.recency, 1) as recency,

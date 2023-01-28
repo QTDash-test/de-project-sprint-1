@@ -1,5 +1,4 @@
-drop view if exists analysis.orders;
-create view analysis.orders as
+create or replace view analysis.orders as
 select
 	ord.order_id as order_id,
 	ord.order_ts as order_ts,
